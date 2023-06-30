@@ -1,0 +1,41 @@
+﻿<html>
+<head>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+</head>
+
+<body>
+
+\[
+\begin{matrix} 
+    Формулы & \int x^{n} dx = \frac{x^{n+1}}{n+1} & \int e^{x} dx = e^x + C
+\end{matrix}
+\]
+<br>		
+\[
+\begin{matrix} 
+    Разбиваешь & на & сумму & трех & интегралов
+\end{matrix}
+\] 
+<br>
+\[ =\int x^3 dx + \int x^{25} dx + \int e^x dx = \frac {x^4}{4} + \frac {x^{25}}{25} + e^x + C =\]
+<br>
+\[ = \frac {x^4}{4} + \frac {2 x^3 \sqrt {x}}{7} + e^x + C\]
+<br>
+\[
+\begin{pmatrix} 
+   a_{11} & a_{12} & a_{13} & a_{14} & a_{15} \\
+   a_{21} & a_{22} & a_{23} & a_{24} & a_{25} \\
+   a_{31} & a_{32} & a_{33} & a_{34} & a_{35}
+\end{pmatrix}
+\]
+<br>
+</body>
+</html>
+
+<script>
+var Element = document.getElementById("formula");
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,Element]);
+
+</script>
